@@ -1,0 +1,48 @@
+header {
+    background-color: teal;
+    color: whitesmoke;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+div:is(.card-container) {
+    width: 250px;
+    height: 320px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: teal;
+    margin: 1%;
+    
+}
+
+.card-image {
+    object-fit: contain;
+    height: 200px;
+    padding: 5%;
+}
+
+.card-title {
+    color: teal;
+    font-size: large;
+    text-align: center;
+}
+
+p:not(.card-title) {
+    text-align: center;
+    font-size: large;
+
+    
+}
+
+.card-anchor {
+    text-decoration: none;
+    color: tomato;
+}
+
+p > a:hover {
+    color:thistle;
+}
