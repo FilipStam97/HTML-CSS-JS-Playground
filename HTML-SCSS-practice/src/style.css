@@ -17,6 +17,11 @@ html, body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.pre-title {
+  font-weight: 600;
+  font-size: 25px;
+}
+
 .number-title {
   color: #01996D;
   margin: 0px;
@@ -51,6 +56,13 @@ p {
 button {
   font-size: 18px;
   font-family: "Lato", sans-serif;
+}
+
+.btn-base {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 nav {
@@ -169,11 +181,14 @@ main .section-2 {
 }
 
 main .section-2-row-1 {
-  -webkit-transform: translateY(20%);
-          transform: translateY(20%);
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 5%;
 }
 
 main .section-2-row-1-column-1 {
@@ -214,6 +229,8 @@ main .section-2-row-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -224,7 +241,23 @@ main .section-2-row-2 img {
   height: 440px;
 }
 
+main .section-2-row-2 h3 {
+  margin-top: 30%;
+  text-align: center;
+}
+
+main .section-2-row-2-column-2 {
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+}
+
+main .section-2-row-2-column-3 {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
 main .section-3 {
+  height: 100vh;
   margin-top: 20%;
   background-color: #245852;
   display: -webkit-box;
@@ -253,11 +286,110 @@ main .section-3-column-1 h2 {
 main .section-3-column-2 {
   margin-top: 10%;
   margin-bottom: 10%;
+  position: relative;
 }
 
-main .section-3-column-2 img {
+main .section-3-column-2 .section-3-img {
   width: 700px;
   height: 400px;
+  position: relative;
+}
+
+main .section-3-column-2 .section-3-icon {
+  position: absolute;
+}
+
+main .section-4 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .section-4-column-1-img-wrapper {
+  width: 640px;
+  height: 570;
+  background-color: rgba(1, 153, 109, 0.2);
+  border-radius: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section-4-column-1 hr {
+  border-top: 1px solid black;
+  width: 50%;
+}
+
+main .section-4-column-1-profile {
+  padding: 20px;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transform: translateY(-80%);
+          transform: translateY(-80%);
+}
+
+main .section-4-column-1-profile-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section-4-column-1-profile-image {
+  width: 52px;
+  height: 52px;
+  background-color: rgba(1, 153, 109, 0.2);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+main .section-4-column-1-profile-image img {
+  width: 50px;
+  height: 60px;
+}
+
+main .section-4-column-1-profile h1 {
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+main .section-4-column-1-profile p {
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+main .section-4-column-1-profile h2 {
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+main .section-4-column-1-profile li {
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
 }
 
 footer {
@@ -267,6 +399,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 5%;
 }
 
 footer .footer-column-1 {
