@@ -12,6 +12,8 @@ $navBorderColor: gainsboro;
 $greenBackgroungColor: #245852;
 $whiteBackgroundColor: white;
 $blueBackgroundColor: rgba(1, 153, 109, 0.2);
+$buttonBackgroundGreen: #01996D;
+
 
 html, body {
     margin: 0px;
@@ -46,6 +48,23 @@ html, body {
    
 }
 
+@mixin btn-base($backgroundColor, $textColor) {
+    background-color: $backgroundColor;
+    color: $textColor;
+    font-size: 18px;
+    font-family: $textFont;
+    border: none;
+    border-radius: 4px;
+    margin: 4px 2px;
+    padding: 15px 32px;
+   
+    &:hover {
+        background-color:darken($backgroundColor,8%);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+}
+
 .title-black {
     margin: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -68,18 +87,33 @@ p{
     font-size: 18px;
 }
 
-button {
-    font-size: 18px;
-    font-family: $textFont;
+.sign-in-button {
+  @include btn-base(transparent, black);
+  border-radius: 0px;
+
 
 }
 
-.btn-base {
-    font-size: 18px;
-    font-family: $textFont;
-    padding-left: 20%;
-    padding-right: 20%;
+.start-trial-button {
+  @include btn-base($buttonBackgroundGreen,$whiteTextColor );
 
+ 
+}
+
+.find-your-way-button {
+  @include btn-base($buttonBackgroundGreen,$whiteTextColor );
+ 
+
+}
+
+.get-started-button {
+  @include btn-base($buttonBackgroundGreen,$whiteTextColor );
+
+
+}
+
+li:hover {
+    cursor: pointer;
 }
 
 nav {
@@ -92,6 +126,8 @@ nav {
     border-width: 0px 0px 1px 0px;
     width: 100%;
     border-color: $navBorderColor;
+    padding-top: 10px;
+    padding-bottom: 10px;
    
 
     .logo-container {
@@ -195,6 +231,7 @@ main {
             img {
                 width: 340px;
                 height: 440px;
+                border-radius: 10px;
             }
             h3 {
                 margin-top: 30%;
@@ -259,7 +296,7 @@ main {
         &-column-1 {
             &-img-wrapper {
                 width: 640px;
-                height: 570;
+                height: 570px;
                 background-color: $blueBackgroundColor;
                 border-radius: 20px;
                 object-fit: contain;
@@ -278,7 +315,7 @@ main {
                 background-color: $whiteBackgroundColor;
                 border-radius: 4px;
                 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-                transform: translate(-20%,-80%);
+                transform: translate(-15%,-80%);
                 &-wrapper {
                     display: flex;
                     justify-content: center;

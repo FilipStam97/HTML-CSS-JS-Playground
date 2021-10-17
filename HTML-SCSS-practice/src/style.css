@@ -53,16 +53,81 @@ p {
   font-size: 18px;
 }
 
-button {
+.sign-in-button {
+  background-color: transparent;
+  color: black;
   font-size: 18px;
   font-family: "Lato", sans-serif;
+  border: none;
+  border-radius: 4px;
+  margin: 4px 2px;
+  padding: 15px 32px;
+  border-radius: 0px;
 }
 
-.btn-base {
+.sign-in-button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.start-trial-button {
+  background-color: #01996D;
+  color: white;
   font-size: 18px;
   font-family: "Lato", sans-serif;
-  padding-left: 20%;
-  padding-right: 20%;
+  border: none;
+  border-radius: 4px;
+  margin: 4px 2px;
+  padding: 15px 32px;
+}
+
+.start-trial-button:hover {
+  background-color: #017050;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.find-your-way-button {
+  background-color: #01996D;
+  color: white;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  border: none;
+  border-radius: 4px;
+  margin: 4px 2px;
+  padding: 15px 32px;
+}
+
+.find-your-way-button:hover {
+  background-color: #017050;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.get-started-button {
+  background-color: #01996D;
+  color: white;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  border: none;
+  border-radius: 4px;
+  margin: 4px 2px;
+  padding: 15px 32px;
+}
+
+.get-started-button:hover {
+  background-color: #017050;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+li:hover {
+  cursor: pointer;
 }
 
 nav {
@@ -79,6 +144,8 @@ nav {
   border-width: 0px 0px 1px 0px;
   width: 100%;
   border-color: gainsboro;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 nav .logo-container {
@@ -241,6 +308,7 @@ main .section-2-row-2 {
 main .section-2-row-2 img {
   width: 340px;
   height: 440px;
+  border-radius: 10px;
 }
 
 main .section-2-row-2 h3 {
@@ -318,7 +386,7 @@ main .section-4 {
 
 main .section-4-column-1-img-wrapper {
   width: 640px;
-  height: 570;
+  height: 570px;
   background-color: rgba(1, 153, 109, 0.2);
   border-radius: 20px;
   -o-object-fit: contain;
@@ -345,8 +413,8 @@ main .section-4-column-1-profile {
   border-radius: 4px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -webkit-transform: translate(-20%, -80%);
-          transform: translate(-20%, -80%);
+  -webkit-transform: translate(-15%, -80%);
+          transform: translate(-15%, -80%);
 }
 
 main .section-4-column-1-profile-wrapper {
