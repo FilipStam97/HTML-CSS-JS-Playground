@@ -166,7 +166,8 @@ main {
             &-column-1 {
                 display: flex;
                 flex-grow: 2;
-                justify-content: space-evenly;
+                margin-left: 10%;
+                justify-content: center;
                 flex-basis: 0;
                 &-cotennt-wrapper {
                     p {
@@ -177,8 +178,9 @@ main {
              
             }
             &-column-2 {
-                justify-content: space-evenly;
+                margin-right: 10%;
                 display: flex;
+                justify-content: center;
                 flex-grow: 2;
                 flex-basis: 0;
                 
@@ -221,7 +223,7 @@ main {
             color: $whiteTextColor;
         }
         &-column-1 {
-            margin-top: 10%;
+            margin-top: 15%;
             margin-bottom: 10%;
             h2 {
                 margin-top: 15%;
@@ -229,7 +231,7 @@ main {
 
         }
         &-column-2 {
-            margin-top: 10%;
+            margin-top: 15%;
             margin-bottom: 10%;
             position: relative;
             .section-3-img {
@@ -242,6 +244,7 @@ main {
             .section-3-icon {
                 
                 position: absolute;
+                transform: translate(-490%,190%);
                 
             }
         }
@@ -275,7 +278,7 @@ main {
                 background-color: $whiteBackgroundColor;
                 border-radius: 4px;
                 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-                transform: translateY(-80%);
+                transform: translate(-20%,-80%);
                 &-wrapper {
                     display: flex;
                     justify-content: center;
