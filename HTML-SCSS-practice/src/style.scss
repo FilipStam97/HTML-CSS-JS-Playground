@@ -193,7 +193,8 @@ main {
         background-color: $whiteBackgroundColor;
         display: flex;
         flex-direction: column;
-       
+        margin-top: 5%;
+        margin-bottom: 20%;
         &-row-1 {
             transform: translateY(100px);
             display:flex;
@@ -251,8 +252,6 @@ main {
 
     .section-3 {
         height: 100vh;
-        margin-top: 20%;
-        padding-bottom: 10%;
         background-color: $greenBackgroungColor;
         display: flex;
         justify-content: space-evenly;
